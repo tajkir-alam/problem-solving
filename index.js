@@ -11,4 +11,30 @@ function reverseString(input) {
     return reversed;
 }
 
-console.log(reverseString('hello world'));
+// console.log(reverseString('hello world'));
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Task 2 : Create a function that takes an array of numbers as input and returns the sum of all positive numbers in the array. 
+
+// Example Input: [2, -5, 10, -3, 7] Example Output: 19
+
+function positiveSum(array) {
+    let sum = 0;
+    array.map(a => {
+        if (a >= 0) {
+            sum += a;
+        }
+    })
+    return sum;
+}
+
+// const array = [2, -5, 10, -3, 7];
+// console.log(positiveSum(array));
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+

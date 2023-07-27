@@ -72,3 +72,32 @@ function findMostFrequentElement(array) {
 // const array = [3, 5, 2, 5, 3, 3, 1, 4, 5];
 // console.log(findMostFrequentElement(array)); 
 
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Task 5: Implement a simple JavaScript calculator. The calculator should take two numbers and an operator (+, -, *, /) as input and return the result of the operation.
+
+function calculate(num1, operator, num2) {
+    switch (operator) {
+        case '+':
+            return num1 + num2;
+        case '-':
+            return num1 - num2;
+        case '*':
+            return num1 * num2;
+        case '/':
+            if (num2 === 0) {
+                return "Error: Cannot divide by zero";
+            }
+            return num1 / num2;
+        default:
+            return "Error: Invalid operator";
+    }
+}
+
+// console.log(calculate(5, '+', 3)); 
+// console.log(calculate(10, '-', 4));
+// console.log(calculate(6, '*', 7)); 
+// console.log(calculate(15, '/', 5)); 
